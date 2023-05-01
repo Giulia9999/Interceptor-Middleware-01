@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "fbc5acaf-0d74-4f30-a693-5ee4214ac88c",
+		"name": "Interceptor-Middleware-01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26043911",
+		"_collection_link": "https://java-team-222.postman.co/workspace/PrimaProva~3b9dee89-b772-45b1-a248-a599dc586a41/collection/26043911-fbc5acaf-0d74-4f30-a693-5ee4214ac88c?action=share&creator=26043911&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "blocked_endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{myHost}}/legacy",
+					"host": [
+						"{{myHost}}"
+					],
+					"path": [
+						"legacy"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "blocked_endpoint",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{myHost}}/legacy",
+							"host": [
+								"{{myHost}}"
+							],
+							"path": [
+								"legacy"
+							]
+						}
+					},
+					"status": "Gone",
+					"code": 410,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 May 2023 13:54:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2023-05-01T13:54:23.953+00:00\",\n    \"status\": 410,\n    \"error\": \"Gone\",\n    \"message\": \"EndPoint not available\",\n    \"path\": \"/legacy\"\n}"
+				}
+			]
+		}
+	]
+}
