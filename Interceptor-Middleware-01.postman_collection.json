@@ -67,6 +67,67 @@
 					"body": "{\n    \"timestamp\": \"2023-05-01T13:54:23.953+00:00\",\n    \"status\": 410,\n    \"error\": \"Gone\",\n    \"message\": \"EndPoint not available\",\n    \"path\": \"/legacy\"\n}"
 				}
 			]
+		},
+		{
+			"name": "GetCurrentTime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{myHost}}/time",
+					"host": [
+						"{{myHost}}"
+					],
+					"path": [
+						"time"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetCurrentTime",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{myHost}}/time",
+							"host": [
+								"{{myHost}}"
+							],
+							"path": [
+								"time"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 May 2023 13:58:30 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "\"2023-05-01T15:58:30.4358238\""
+				}
+			]
 		}
 	]
 }
